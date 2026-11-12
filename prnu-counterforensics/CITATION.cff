@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this toolkit, please cite it and the underlying triangle-test paper."
+title: "prnucf: PRNU counter-forensics evaluation toolkit"
+version: 0.1.0
+date-released: 2026-11-11
+authors:
+  - family-names: Geradts
+    given-names: Zeno
+license: MIT
+references:
+  - type: article
+    authors:
+      - family-names: Goljan
+        given-names: Miroslav
+      - family-names: Fridrich
+        given-names: Jessica
+      - family-names: Chen
+        given-names: Mo
+    title: "Defending against fingerprint-copy attack in sensor-based camera identification"
+    journal: "IEEE Transactions on Information Forensics and Security"
+    year: 2011

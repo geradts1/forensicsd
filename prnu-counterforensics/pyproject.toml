@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prnucf"
+version = "0.1.0"
+description = "PRNU counter-forensics evaluation toolkit: fingerprint-copy attack and triangle-test detection for source-camera attribution robustness"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Zeno Geradts" }]
+keywords = ["forensics", "PRNU", "sensor noise", "source camera identification",
+            "counter-forensics", "fingerprint copy", "triangle test"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Image Processing",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "PyWavelets>=1.3",
+]
+
+[project.optional-dependencies]
+io = ["Pillow>=9.0"]
+dev = ["pytest>=7.0", "Pillow>=9.0"]
+
+[project.scripts]
+prnucf = "prnucf.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/zgeradts/prnu-counterforensics"
+
+[tool.setuptools]
+packages = ["prnucf"]
+
+[tool.pytest.ini_options]
+filterwarnings = ["ignore::UserWarning"]
