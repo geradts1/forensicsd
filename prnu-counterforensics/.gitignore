@@ -7,5 +7,6 @@ dist/
 *.npy
 *.png
 !examples/*.png
+!paper/figures/*.png
 .venv/
 .DS_Store
